@@ -44,7 +44,7 @@ include 'header.php';
 </form>
 
 <h3>All Tags</h3>
-<table border="1">
+<table>
     <thead>
         <tr>
             <th>ID</th>

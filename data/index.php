@@ -45,7 +45,7 @@ include 'header.php';
 
 <br>
 
-<table border="1">
+<table>
     <thead>
         <tr>
             <th>ID</th>

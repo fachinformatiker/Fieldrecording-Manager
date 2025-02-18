@@ -34,3 +34,18 @@ input:focus {
     outline: none;
     border-color: #51CBEE;
 }
+
+table {
+    border-collapse: collapse;
+    border: 1px solid;
+}
+
+td, th {
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+    height: 30px;
+    vertical-align: middle;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
