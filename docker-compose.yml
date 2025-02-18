@@ -1,0 +1,10 @@
+services:
+  field_recordings:
+    build: .
+    container_name: field_recordings
+    volumes:
+      - fieldrecordings:/var/www/html
+    ports:
+      - "6680:80"
+volumes:
+  fieldrecordings:
