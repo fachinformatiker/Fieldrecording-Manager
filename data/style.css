@@ -1,0 +1,36 @@
+a:link {
+    display: inline-block;
+    padding: 4px;
+    border: 1px solid #FCB326;
+    border-radius: 6px;
+    box-shadow: 
+        0 3px 1px rgba(0, 0, 0, 0.2), 
+        inset 0 3px 1px rgba(0, 0, 0, 0.2);
+    /* Font styles */
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #222;
+}
+
+a:hover {
+    border-color: #FDD68B
+}
+
+a:active {
+    border-color: #FEE8BD
+}
+
+input {
+    display: block;
+    border: none;
+    color: #333;
+    background: transparent;
+    border-bottom: 1px dotted black;
+    padding: 5px 2px 0 2px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #51CBEE;
+}

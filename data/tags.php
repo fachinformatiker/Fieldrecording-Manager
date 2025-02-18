@@ -38,11 +38,9 @@ include 'header.php';
 
 <h3>Add new Tag</h3>
 <form action="tags.php" method="post">
-    <label for="tag">Tag:</label>
-    <input type="text" name="tag" id="tag" required><br><br>
-    <label for="notes">Notes:</label><br>
-    <textarea name="notes" id="notes" rows="3" cols="40"></textarea><br><br>
-    <input type="submit" value="Add">
+    <input type="text" placeholder="Name" name="tag" id="tag" required><br><br>
+    <textarea name="notes" placeholder="Notes" id="notes" rows="3" cols="40"></textarea><br><br>
+    <button type="submit">Add</button>
 </form>
 
 <h3>All Tags</h3>
@@ -66,7 +64,7 @@ include 'header.php';
                         <input type="hidden" name="id" value="<?php echo $tag['id']; ?>">
                         <input type="text" name="tag" value="<?php echo htmlspecialchars($tag['tag']); ?>" required>
                         <input type="text" name="notes" value="<?php echo htmlspecialchars($tag['notes']); ?>">
-                        <input type="submit" value="Update">
+                        <button type="submit">Update</button>
                     </form>
                 </td>
             </tr>

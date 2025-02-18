@@ -38,13 +38,9 @@ include 'header.php';
 <h2>All Recordings</h2>
 
 <form method="get" action="index.php">
-    <label for="name">Name:</label>
-    <input type="text" name="name" id="name" value="<?php echo isset($_GET['name']) ? htmlspecialchars($_GET['name']) : ''; ?>">
-    <br>
-    <label for="date">Date (YYYY-MM-DD):</label>
-    <input type="text" name="date" id="date" value="<?php echo isset($_GET['date']) ? htmlspecialchars($_GET['date']) : ''; ?>">
-    <br>
-    <input type="submit" value="Filter">
+    <input type="text" name="name" id="name" placeholder="Name" value="<?php echo isset($_GET['name']) ? htmlspecialchars($_GET['name']) : ''; ?>">
+    <input type="text" name="date" id="date" placeholder="Date (YYYY-MM-DD)" value="<?php echo isset($_GET['date']) ? htmlspecialchars($_GET['date']) : ''; ?>">
+    <button type="submit">Filter</button>
 </form>
 
 <br>

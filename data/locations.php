@@ -38,11 +38,9 @@ include 'header.php';
 
 <h3>Add new Location</h3>
 <form action="locations.php" method="post">
-    <label for="location">Location:</label>
-    <input type="text" name="location" id="location" required><br><br>
-    <label for="notes">Notes:</label><br>
-    <textarea name="notes" id="notes" rows="3" cols="40"></textarea><br><br>
-    <input type="submit" value="Add">
+    <input type="text" placeholder="Name" name="location" id="location" required><br><br>
+    <textarea name="notes" placeholder="Notes" id="notes" rows="3" cols="40"></textarea><br><br>
+    <button type="submit">Add</button>
 </form>
 
 <h3>All Locations</h3>
@@ -66,7 +64,7 @@ include 'header.php';
                         <input type="hidden" name="id" value="<?php echo $loc['id']; ?>">
                         <input type="text" name="location" value="<?php echo htmlspecialchars($loc['location']); ?>" required>
                         <input type="text" name="notes" value="<?php echo htmlspecialchars($loc['notes']); ?>">
-                        <input type="submit" value="Update">
+                        <button type="submit">Update</button>
                     </form>
                 </td>
             </tr>

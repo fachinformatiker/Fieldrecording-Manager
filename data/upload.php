@@ -19,11 +19,8 @@ include 'header.php' ?>
 <body>
     <h2>Upload Field Recording</h2>
     <form action="upload_process.php" method="post" enctype="multipart/form-data">
-        <label for="name">Recording Name:</label>
-        <input type="text" name="name" required><br>
-
-        <label for="file">Upload File:</label>
-        <input type="file" name="file" required><br>
+        <input type="text" name="name" placeholder="Recording Name" required><br>
+        <input type="file" name="file" placeholder="File to be uploaded" required><br>
 
         <label for="tags">Tags:</label>
         <select name="tags[]" multiple>
@@ -39,8 +36,7 @@ include 'header.php' ?>
             <?php endforeach; ?>
         </select><br>
 
-        <label for="notes">Notes:</label>
-        <textarea name="notes"></textarea><br>
+        <textarea name="notes" placeholder="Notes"></textarea><br>
 
         <button type="submit">Upload</button>
     </form>
