@@ -40,10 +40,14 @@ include 'header.php';
 <form method="get" action="index.php">
     <label for="name">Name:</label>
     <input type="text" name="name" id="name" value="<?php echo isset($_GET['name']) ? htmlspecialchars($_GET['name']) : ''; ?>">
+    <br>
     <label for="date">Date (YYYY-MM-DD):</label>
     <input type="text" name="date" id="date" value="<?php echo isset($_GET['date']) ? htmlspecialchars($_GET['date']) : ''; ?>">
+    <br>
     <input type="submit" value="Filter">
 </form>
+
+<br>
 
 <table border="1">
     <thead>
