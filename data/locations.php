@@ -36,12 +36,18 @@ include 'header.php';
     <p><?php echo htmlspecialchars($message); ?></p>
 <?php endif; ?>
 
+<div class="two-column-container">
+    <div class="left-column">
+
 <h3>Add new Location</h3>
 <form action="locations.php" method="post">
     <input type="text" placeholder="Name" name="location" id="location" required><br><br>
     <textarea name="notes" placeholder="Notes" id="notes" rows="3" cols="40"></textarea><br><br>
     <button type="submit">Add</button>
 </form>
+
+</div>
+<div class="right-column">
 
 <h3>All Locations</h3>
 <table>
@@ -71,5 +77,8 @@ include 'header.php';
         <?php endforeach; ?>
     </tbody>
 </table>
+
+</div>
+</div>
 
 <?php include 'footer.php'; ?>
