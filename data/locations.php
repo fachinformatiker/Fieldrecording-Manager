@@ -31,7 +31,8 @@ $locations = $stmt->fetchAll(PDO::FETCH_ASSOC);
 include 'header.php';
 ?>
 
-<h2>Locations</h2>
+<center><h2>Locations</h2></center>
+
 <?php if ($message): ?>
     <p><?php echo htmlspecialchars($message); ?></p>
 <?php endif; ?>

@@ -8,14 +8,13 @@
 <body>
     <header>
         <center>
-            <h1>Fieldrecording Manager</h1>
-            <nav>
+            <div class="topnav">
                 <a href="index.php">Home</a> |
                 <a href="upload.php">Upload</a> |
                 <a href="tags.php">Tags</a> |
                 <a href="locations.php">Locations</a>
-            </nav>
-	    <hr>
+            </div>
+	    <br><br>
         </center>
     </header>
     <main>

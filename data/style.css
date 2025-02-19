@@ -1,104 +1,162 @@
-/* Link styling */
-a:link {
-    display: inline-block;
-    padding: 4px;
-    border: 1px solid #FCB326;
-    border-radius: 6px;
-    box-shadow: 
-        0 3px 1px rgba(0, 0, 0, 0.2), 
-        inset 0 3px 1px rgba(0, 0, 0, 0.2);
-    /* Font styles */
-    text-decoration: none;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #222;
+/* Basis-Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Link-Styling */
+a:link, a:visited {
+  display: inline-block;
+  padding: 4px 8px;
+  border: 1px solid #FCB326;
+  border-radius: 6px;
+  box-shadow: 
+      0 3px 1px rgba(0, 0, 0, 0.2), 
+      inset 0 3px 1px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #222;
+  transition: border-color 0.3s;
 }
 
 a:hover {
-    border-color: #FDD68B
+  border-color: #FDD68B;
 }
 
 a:active {
-    border-color: #FEE8BD
+  border-color: #FEE8BD;
 }
 
-/* Input styling */
-input {
-    border: none;
-    color: #333;
-    background: transparent;
-    border-bottom: 1px dotted black;
-    padding: 5px 2px 0 2px;
+/* Button-Styling */
+button.btn {
+  background-color: #FCB326;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  color: #222;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.btn:hover {
+  background-color: #FDD68B;
+}
+
+/* Input-Styling */
+input[type="text"],
+input[type="file"] {
+  width: 100%;
+  border: none;
+  color: #333;
+  background: transparent;
+  border-bottom: 1px dotted #000;
+  padding: 5px 2px;
+  margin-bottom: 10px;
 }
 
 input:focus {
-    outline: none;
-    border-color: #51CBEE;
+  outline: none;
+  border-color: #51CBEE;
 }
 
-/* Table styling */
+/* Tabellen-Styling */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
 }
 
 table, th, td {
-    border: 1px solid #ddd;
+  border: 1px solid #ddd;
 }
 
-td, th {
-    border: 1px solid;
-    padding: 10px;
-    text-align: center;
-    height: 30px;
-    vertical-align: middle;
+th, td {
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  height: 30px;
 }
 
-tr:nth-child(even) {background-color: #f2f2f2;}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
-/* Two-column container */
+/* Container für zwei Spalten */
 .two-column-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px;
 }
 
-/* Left and right columns */
-.left-column, .right-column {
-    flex: 1;
-    min-width: 300px;
-    padding: 15px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fafafa;
+/* Linke und rechte Spalte */
+.left-column,
+.right-column {
+  flex: 1;
+  min-width: 300px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fafafa;
 }
 
 .left-column {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .right-column {
-    flex-grow: 2;
+  flex-grow: 2;
 }
 
-/* one-column container */
+/* Container für eine Spalte */
 .one-column-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
 }
 
-/* One column */
 .one-column {
-    flex: 1;
-    min-width: 300px;
-    padding: 15px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fafafa;
+  width: 100%;
+  max-width: 800px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+/* Top Navigation Bar */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.topnav a:hover {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/* Zusätzliche Stile (z. B. Überschriften & Abstände) */
+h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+p {
+  line-height: 1.6;
+  color: #555;
 }

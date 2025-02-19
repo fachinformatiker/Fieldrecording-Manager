@@ -17,7 +17,11 @@ include 'header.php' ?>
     <title>Upload Field Recording</title>
 </head>
 <body>
-    <h2>Upload Field Recording</h2>
+    <center><h2>Upload Field Recording</h2></center>
+
+<div class="one-column-container">
+    <div class="one-column">
+
     <form action="upload_process.php" method="post" enctype="multipart/form-data">
         <input type="text" name="name" placeholder="Recording Name" required><br>
         <input type="file" name="file" placeholder="File to be uploaded" required><br>
@@ -40,6 +44,8 @@ include 'header.php' ?>
 
         <button type="submit">Upload</button>
     </form>
+</div>
+</div>
 </body>
 </html>
 

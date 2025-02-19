@@ -35,7 +35,7 @@ $recordings = $stmt->fetchAll(PDO::FETCH_ASSOC);
 include 'header.php';
 ?>
 
-<h2>All Recordings</h2>
+<center><h2>All Recordings</h2></center>
 
 <div class="one-column-container">
     <div class="one-column">
