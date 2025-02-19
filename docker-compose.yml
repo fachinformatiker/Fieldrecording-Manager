@@ -3,7 +3,7 @@ services:
     build: .
     container_name: field_recordings
     volumes:
-      - fieldrecordings:/var/www/html
+      - fieldrecordings:/htdocs
     ports:
       - "6680:80"
 volumes:
