@@ -18,3 +18,4 @@
         </center>
     </header>
     <main>
+<div class="content">
