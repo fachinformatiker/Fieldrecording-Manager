@@ -35,18 +35,16 @@ $recordings = $stmt->fetchAll(PDO::FETCH_ASSOC);
 include 'header.php';
 ?>
 
-<center><h2>All Recordings</h2></center>
+<h2>All Recordings</h2>
 
 <div class="one-column-container">
     <div class="one-column">
 
-<center>
 <form method="get" action="index.php">
     <input type="text" name="name" id="name" placeholder="Name" value="<?php echo isset($_GET['name']) ? htmlspecialchars($_GET['name']) : ''; ?>">
     <input type="text" name="date" id="date" placeholder="Date (YYYY-MM-DD)" value="<?php echo isset($_GET['date']) ? htmlspecialchars($_GET['date']) : ''; ?>">
     <button type="submit">Filter</button>
 </form>
-</center>
 
 <br>
 

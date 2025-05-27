@@ -7,15 +7,14 @@
 </head>
 <body>
     <header>
-        <center>
+        <nav>
             <div class="topnav">
                 <a href="index.php">Home</a> |
                 <a href="upload.php">Upload</a> |
                 <a href="tags.php">Tags</a> |
                 <a href="locations.php">Locations</a>
             </div>
-	    <br><br>
-        </center>
+        </nav>
     </header>
     <main>
 <div class="content">
