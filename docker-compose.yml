@@ -1,10 +1,31 @@
+version: '3.8'
+
 services:
   field_recordings:
     build: .
-    container_name: field_recordings
-    volumes:
-      - fieldrecordings:/htdocs
+    container_name: field_recordings_manager
     ports:
       - "6680:80"
+    volumes:
+      # Persistent data storage
+      - field_recordings_data:/var/www/html/data
+      - field_recordings_uploads:/var/www/html/uploads
+      - field_recordings_logs:/var/www/html/logs
+    environment:
+      - APACHE_RUN_USER=www-data
+      - APACHE_RUN_GROUP=www-data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
 volumes:
-  fieldrecordings:
+  field_recordings_data:
+    driver: local
+  field_recordings_uploads:
+    driver: local
+  field_recordings_logs:
+    driver: local
