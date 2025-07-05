@@ -1,0 +1,5 @@
+[05-Jul-2025 17:59:04 UTC] PHP Warning:  Undefined array key "path" in /Volumes/Szalewicz/Projects/fieldrecordingmanager/data/edit.php on line 137
+[05-Jul-2025 17:59:04 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /Volumes/Szalewicz/Projects/fieldrecordingmanager/data/edit.php on line 137
+[05-Jul-2025 17:59:04 UTC] PHP Warning:  Undefined array key "size" in /Volumes/Szalewicz/Projects/fieldrecordingmanager/data/edit.php on line 138
+[05-Jul-2025 17:59:04 UTC] PHP Warning:  Undefined array key "upload_date" in /Volumes/Szalewicz/Projects/fieldrecordingmanager/data/edit.php on line 139
+[05-Jul-2025 17:59:04 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /Volumes/Szalewicz/Projects/fieldrecordingmanager/data/edit.php on line 139

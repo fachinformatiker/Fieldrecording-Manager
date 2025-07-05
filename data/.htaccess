@@ -1,0 +1,44 @@
+# PHP Configuration for File Uploads
+# Increase upload limits for audio files
+
+php_value upload_max_filesize 200M
+php_value post_max_size 200M
+php_value max_execution_time 300
+php_value max_input_time 300
+php_value memory_limit 256M
+php_value max_file_uploads 20
+
+# Enable file uploads
+php_flag file_uploads On
+
+# Security headers
+Header always set X-Content-Type-Options nosniff
+Header always set X-Frame-Options DENY
+Header always set X-XSS-Protection "1; mode=block"
+
+# Enable HTTP Range Requests for audio seeking
+Header always set Accept-Ranges bytes
+
+# Audio file handling with range support
+<FilesMatch "\.(mp3|wav|flac|ogg|m4a|aac|wma|aiff|au)$">
+    Header always set Accept-Ranges bytes
+    Header always set Cache-Control "public, max-age=3600"
+    # Enable partial content responses
+    SetEnvIf Range "(\d+)-(\d*)" RANGE_START=$1 RANGE_END=$2
+</FilesMatch>
+
+# Prevent access to sensitive files
+<Files "*.sqlite">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "*.log">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "config.php">
+    Order allow,deny
+    Deny from all
+</Files>

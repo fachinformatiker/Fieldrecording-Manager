@@ -1,11 +1,12 @@
 </div>
     </main>
-    <footer>
-<div class="footer">
-        <center>
-            <p>&copy; <?php echo date("Y"); ?> Fieldrecording Manager by <a href="https://psvisual.de/" target="_blank">Patrick Szalewicz</a></p>
-        </center>
-</div>
+    <footer class="footer">
+        <div class="container">
+            <p class="text-center text-muted">
+                &copy; <?php echo date("Y"); ?> Field Recording Manager by 
+                <a href="https://psvisual.de/" target="_blank" rel="noopener noreferrer">Patrick Szalewicz</a>
+            </p>
+        </div>
     </footer>
 </body>
 </html>

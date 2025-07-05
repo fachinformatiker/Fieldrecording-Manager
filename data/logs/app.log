@@ -1,0 +1,2 @@
+0[2025-07-05 17:56:47] Database error during upload: SQLSTATE[HY000]: General error: 1 table recordings has no column named path
+[2025-07-05 17:58:47] File uploaded successfully: nn (ID: 1)
